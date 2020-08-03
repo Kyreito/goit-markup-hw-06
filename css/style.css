@@ -246,6 +246,20 @@ img {
   cursor: pointer;
 }
 
+.backdrop .is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*.backdrop {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}*/
+
 .main-title {
   font-family: var(--font-family-main);
   font-style: normal;

@@ -64,18 +64,27 @@
 
     <main class="main-page">
       <section class="hero-section">
-        <!--<div class="wprapper-transparent"> цей блок був для попереднього фону-->
-
         <div class="container">
           <h1 class="main-title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-modal-btn">
+
+          <button data-modal-open class="hero-modal-btn">
             Заказать услугу
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                molestiae perspiciatis. Delectus dolorem hic quibusdam libero
+                repellendus mollitia, voluptatibus, maxime eligendi commodi
+                maiores voluptate laudantium esse asperiores enim porro nemo!
+              </p>
+              <button data-modal-close>Закрыть</button>
+            </div>
+          </div>
         </div>
-        <!--</div>-->
       </section>
 
       <!--Качества-->
@@ -552,5 +561,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

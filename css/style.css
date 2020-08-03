@@ -246,13 +246,13 @@ img {
   cursor: pointer;
 }
 
-.backdrop .is-hidden {
+/*.backdrop .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
-/*.backdrop {
+.backdrop {
   width: 100%;
   height: 100%;
   opacity: 1;

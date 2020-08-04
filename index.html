@@ -87,6 +87,9 @@
                   placeholder=" "
                 />
                 <span class="label-name">Имя</span>
+                <svg class="name-icon" width="18" height="18">
+                  <use href="./img/icomoon/sprite.svg#icon-name-icon"></use>
+                </svg>
               </label>
 
               <label class="form-field">
@@ -97,6 +100,9 @@
                   placeholder=" "
                 />
                 <span class="label-name">Телефон</span>
+                <svg class="name-icon" width="18" height="18">
+                  <use href="./img/icomoon/sprite.svg#icon-phone-icon"></use>
+                </svg>
               </label>
 
               <label class="form-field">
@@ -107,23 +113,28 @@
                   placeholder=" "
                 />
                 <span class="label-name">Почта</span>
+                <svg class="name-icon" width="18" height="18">
+                  <use href="./img/icomoon/sprite.svg#icon-mail-icon"></use>
+                </svg>
               </label>
+
               <label class="form-field">
                 <textarea
-                  type="textarea"
                   class="form-taxtarea"
-                  name="textarea"
+                  type="textarea"
+                  name="comment"
                   rows="5"
                   placeholder=" "
                 ></textarea>
                 <span class="textarea-name">Комментарий</span>
               </label>
+
               <label class="checkbox-field">
                 <input
                   class="checkbox-input"
                   type="checkbox"
                   name="topic"
-                  value="html"
+                  value="comment"
                 />
                 <span class="checkbox-icon"></span>
 
@@ -132,10 +143,16 @@
                   <a class="label-link" href="">Условия договора</a>
                 </span>
               </label>
-              <button type="submit" class="form-submit">Отправить</button>
+              <button type="submit" class="form-submit">
+                Отправить
+              </button>
             </form>
 
-            <button class="close-modal" data-modal-close>Закрить</button>
+            <button class="close-modal" data-modal-close>
+              <svg class="modal-close-icon" width="20" height="20">
+                <use href="./img/icomoon/sprite.svg#icon-modal-close"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>

@@ -69,20 +69,55 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-
           <button data-modal-open class="hero-modal-btn">
             Заказать услугу
           </button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-                molestiae perspiciatis. Delectus dolorem hic quibusdam libero
-                repellendus mollitia, voluptatibus, maxime eligendi commodi
-                maiores voluptate laudantium esse asperiores enim porro nemo!
-              </p>
-              <button data-modal-close>Закрыть</button>
-            </div>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p class="modal-title">
+              Оставьте свои данные, мы вам перезвоним
+            </p>
+            <form class="form">
+              <label class="form-field">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  placeholder=" "
+                />
+                <span class="label-name">Имя</span>
+              </label>
+
+              <label class="form-field">
+                <input
+                  class="form-input"
+                  type="tel"
+                  name="tel"
+                  placeholder=" "
+                />
+                <span class="label-name">Телефон</span>
+              </label>
+
+              <label class="form-field">
+                <input
+                  class="form-input"
+                  type="email"
+                  name="mail"
+                  placeholder=" "
+                />
+                <span class="label-name">Почта</span>
+              </label>
+              <textarea
+                type="textaria"
+                class="form-taxtarea"
+                name="textaria"
+                rows="5"
+                placeholder="Комментарий"
+              ></textarea>
+            </form>
+
+            <button data-modal-close>Закрить</button>
           </div>
         </div>
       </section>

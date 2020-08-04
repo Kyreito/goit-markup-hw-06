@@ -108,16 +108,34 @@
                 />
                 <span class="label-name">Почта</span>
               </label>
-              <textarea
-                type="textaria"
-                class="form-taxtarea"
-                name="textaria"
-                rows="5"
-                placeholder="Комментарий"
-              ></textarea>
+              <label class="form-field">
+                <textarea
+                  type="textarea"
+                  class="form-taxtarea"
+                  name="textarea"
+                  rows="5"
+                  placeholder=" "
+                ></textarea>
+                <span class="textarea-name">Комментарий</span>
+              </label>
+              <label class="checkbox-field">
+                <input
+                  class="checkbox-input"
+                  type="checkbox"
+                  name="topic"
+                  value="html"
+                />
+                <span class="checkbox-icon"></span>
+
+                <span class="checkbox-name"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a class="label-link" href="">Условия договора</a>
+                </span>
+              </label>
+              <button type="submit" class="form-submit">Отправить</button>
             </form>
 
-            <button data-modal-close>Закрить</button>
+            <button class="close-modal" data-modal-close>Закрить</button>
           </div>
         </div>
       </section>

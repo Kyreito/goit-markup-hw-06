@@ -287,6 +287,7 @@ img {
   left: 50%;
   padding: 40px;
   width: 528px;
+  height: 581px;
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -297,6 +298,7 @@ img {
 
 .modal-title {
   display: block;
+  margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
@@ -313,6 +315,9 @@ img {
 .form-field {
   display: block;
   position: relative;
+}
+
+.form-field:not(:last-child) {
   margin-bottom: 28px;
 }
 
@@ -352,7 +357,7 @@ img {
   height: 120px;
   resize: none;
   padding: 10px 15px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   outline: 0;
 
   width: 448px;

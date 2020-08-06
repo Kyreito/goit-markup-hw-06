@@ -73,6 +73,9 @@
             Заказать услугу
           </button>
         </div>
+
+      <!--MODAL-->
+
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <p class="modal-title">
@@ -120,13 +123,13 @@
 
               <label class="form-field">
                 <textarea
-                  class="form-taxtarea"
+                  class="form-textarea"
                   type="textarea"
                   name="comment"
                   rows="5"
-                  placeholder=" "
+                  placeholder="Комментарий"
                 ></textarea>
-                <span class="textarea-name">Комментарий</span>
+                <span class="textarea-name"></span>
               </label>
 
               <label class="checkbox-field">
@@ -134,7 +137,7 @@
                   class="checkbox-input"
                   type="checkbox"
                   name="topic"
-                  value="comment"
+                  value="accept-policy"
                 />
                 <span class="checkbox-icon"></span>
 
@@ -614,19 +617,26 @@
 
         <div class="mailing">
           <h2 hidden>Футер сайта</h2>
-          <p class="footer-title list">Подпишитесь на рассылку</p>
+          <p class="footer-form-label list">Подпишитесь на рассылку</p>
           <div class="mailing-form">
-            <form>
+            
+            <form class="footer-form">
               <span
-                ><input type="email" name="email" placeholder="E-mail"
+                ><input
+                  class="input-form-footer"
+                  type="email"
+                  name="mail"
+                  placeholder="E-mail"
               /></span>
+              <div class="footer-button-position">
+              <button class="footer-btn" type="submit">
+                Подписаться
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./img/icomoon/sprite.svg#icon-icon-send"></use>
+                </svg>
+                </div>
+              </button>
             </form>
-            <button class="footer-btn" type="submit">
-              Подписаться
-              <svg class="icon-send" width="24" height="24">
-                <use href="./img/icomoon/sprite.svg#icon-icon-send"></use>
-              </svg>
-            </button>
           </div>
         </div>
       </div>

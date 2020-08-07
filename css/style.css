@@ -415,7 +415,37 @@ img {
   overflow: hidden;
 }
 
-.checkbox-icon {
+.checkbox-icon::before {
+  content: "";
+  display: block;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 9px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  /* border-color: var(--accent-color); 
+  border-color не перебивається*/
+  background-color: var(--accent-color);
+  background-image: url(../img/modal-icons/agreement-icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  border-radius: 4px;
+
+  width: 15px;
+  height: 15px;
+  margin-right: 9px;
+}
+
+/* Попередній код для чекбокса - 
+потрібно буди його відновити або видалити*/
+
+/* .checkbox-icon: {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -432,8 +462,9 @@ img {
   background-color: var(--accent-color);
   background-image: url(../img/modal-icons/agreement-icon.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   background-origin: border-box;
-}
+} */
 
 .checkbox-field {
   display: flex;

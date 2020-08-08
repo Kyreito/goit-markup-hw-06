@@ -423,13 +423,13 @@ img {
   margin-right: 9px;
   width: 15px;
   height: 15px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid black;
   border-radius: 4px;
 }
 
-.checkbox-input:checked + .checkbox-icon {
-  /* border-color: var(--accent-color); 
-  border-color не перебивається*/
+.checkbox-input:checked + .checkbox-icon::before {
+  border-color: var(--accent-color);
+
   background-color: var(--accent-color);
   background-image: url(../img/modal-icons/agreement-icon.svg);
   background-size: contain;
